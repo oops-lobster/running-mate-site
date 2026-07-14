@@ -11,8 +11,8 @@
     <title>러닝메이트 — 하루 종일, 네 옆에서 같이</title>
     <link rel="icon" href="./assets/icon-192.png" />
     <link rel="apple-touch-icon" href="./assets/icon-192.png" />
-    <link rel="stylesheet" href="./styles.css?v=3" />
-    <script src="./app.js?v=3" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=4" />
+    <script src="./app.js?v=4" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">본문으로 이동</a>
@@ -24,6 +24,7 @@
       </a>
       <nav aria-label="주요 메뉴">
         <a href="#features">기능</a>
+        <a href="#chat">1:1 채팅</a>
         <a href="#premium">프리미엄</a>
         <a class="nav-cta" href="https://grind-theta.vercel.app/" target="_blank" rel="noreferrer">앱 설치</a>
       </nav>
@@ -101,7 +102,82 @@
           <article><span>03</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="m8 5 1.5-2h5L16 5M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0" /></svg><h3>공부 인증 사진</h3><p>세션이 끝나기 전에 실제 공부 흔적을 촬영하고 비공개 저장소에 보관합니다.</p></article>
           <article><span>04</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v12H8l-4 4V5Z"/><path d="M8 9h8M8 13h5" /></svg><h3>즉시 회고</h3><p>실모 점수, 만족도, 잘한 점과 개선점을 기억이 선명할 때 바로 남깁니다.</p></article>
           <article class="ai-feature"><span>05 · FREE BASE</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.4 4.1L17.5 8.5l-4.1 1.4L12 14l-1.4-4.1-4.1-1.4 4.1-1.4L12 3Z"/><path d="m18 14 .8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14Z" /></svg><h3>AI 문제 분석</h3><p>사진과 회고에서 오류 유형·가능한 원인·다음 행동을 구조화합니다. 기본 제공량은 무료입니다.</p></article>
-          <article class="mentor-feature"><span>06 · PREMIUM</span><div class="mini-mark">C &amp; R</div><h3>서울대 선배의 밀착 관리</h3><p>매일 1:1 리뷰, 주간 약점 리포트, 다음 주 플랜과 SOS 답변까지 이어집니다.</p></article>
+          <article class="mentor-feature"><span>06 · PREMIUM</span><div class="mini-mark">C &amp; R</div><h3>서울대 선배와 인앱 1:1</h3><p>Cathy &amp; Ray의 공동 답장함으로 질문이 이어지고, 앱 안에서 개별 답장을 받습니다.</p></article>
+        </div>
+      </section>
+
+      <section class="scene mentor-chat-story" id="chat" data-theme="dark">
+        <div class="chat-story-copy reveal">
+          <p class="eyebrow bronze"><span></span> PRIVATE · MENTOR 2</p>
+          <h2>기록 끝에,<br /><em>진짜 답장이.</em></h2>
+          <p class="chat-story-lead">회고를 남긴 바로 그 앱에서 서울대 선배 Cathy &amp; Ray에게 묻습니다. 학생 1명과 담당 멘토 2명만 보는 비공개 채널입니다.</p>
+
+          <ul class="chat-facts" aria-label="1대1 멘토 채팅 기능">
+            <li><b>PRIVATE</b><span>학생 1명 · 멘토 2명</span></li>
+            <li><b>REALTIME</b><span>새 답장 실시간 갱신</span></li>
+            <li><b>SHARED INBOX</b><span>Cathy &amp; Ray 공동 관리</span></li>
+          </ul>
+
+          <div class="chat-topic-picker">
+            <p id="chat-topic-label">무엇을 물어볼까요?</p>
+            <div role="group" aria-labelledby="chat-topic-label">
+              <button class="active" type="button" data-chat-topic="korean" aria-pressed="true">국어 시간 배분</button>
+              <button type="button" data-chat-topic="math" aria-pressed="false">수학 오답 루틴</button>
+              <button type="button" data-chat-topic="plan" aria-pressed="false">흔들린 하루 계획</button>
+            </div>
+          </div>
+
+          <div class="chat-story-action">
+            <a class="button button-install" href="https://grind-theta.vercel.app/" target="_blank" rel="noreferrer">앱에서 직접 대화하기 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
+            <p><b>제한 베타</b> · 오른쪽 대화는 실제 기능을 바탕으로 만든 응답 흐름 예시입니다.</p>
+          </div>
+        </div>
+
+        <div class="chat-product reveal">
+          <aside class="mentor-workflow" aria-label="멘토 공동 답장함 처리 흐름">
+            <p><span>MENTOR SIDE</span><b>공동 답장함</b></p>
+            <ol>
+              <li class="done">읽지 않음</li>
+              <li class="active">검토 중</li>
+              <li>답변 완료</li>
+            </ol>
+          </aside>
+
+          <article class="chat-device" aria-label="Cathy와 Ray의 인앱 멘토 채팅 응답 예시">
+            <header class="chat-device-header">
+              <div class="chat-device-top">
+                <span class="chat-back" aria-hidden="true">‹</span>
+                <p><small>PRIVATE · MENTOR 2</small><b>Cathy &amp; Ray</b></p>
+                <span class="unread-badge" aria-label="읽지 않은 메시지 1개">1</span>
+              </div>
+              <div class="chat-people">
+                <div class="mentor-avatars" aria-hidden="true"><span>C</span><span>R</span></div>
+                <p>Cathy · Ray와 나만 보는 대화예요.</p>
+              </div>
+            </header>
+
+            <div class="chat-date"><span>오늘</span></div>
+            <div class="chat-log" data-chat-log aria-live="polite" aria-atomic="true">
+              <div class="chat-message mine">
+                <div class="chat-message-meta"><b>나</b><span>21:18</span></div>
+                <p>오늘 국어 실모 68점이었어요. 화작에 12분 쓰고 독서 마지막 지문을 거의 못 풀었어요.</p>
+              </div>
+              <div class="chat-message theirs">
+                <div class="chat-avatar" aria-hidden="true">C</div>
+                <div>
+                  <div class="chat-message-meta"><b>Cathy</b><span class="direct-label">개별 답장</span><span>21:26</span></div>
+                  <p>화작 12분은 괜찮아. 독서 첫 두 지문에서 각각 몇 분을 썼는지 먼저 보자. 오늘 회고 사진도 올려주면, 내일 끊어야 할 기준을 하나 정해줄게.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-composer" aria-hidden="true">
+              <span>메시지 보내기</span>
+              <i>↑</i>
+            </div>
+          </article>
+
+          <p class="chat-build-note"><span></span> ACTUAL FEATURE STRUCTURE · RESPONSE EXAMPLE</p>
         </div>
       </section>
 
@@ -126,7 +202,7 @@
           <ol>
             <li><span>01</span><p><b>매일 모의고사 1:1 리뷰</b><small>Cathy &amp; Ray가 직접 확인하고 피드백</small></p></li>
             <li><span>02</span><p><b>확장 AI 분석 · 주간 약점 리포트</b><small>더 많이 분석하고 다음 주 실행까지 연결</small></p></li>
-            <li><span>03</span><p><b>SOS 답변 · 다음 주 플랜</b><small>막힌 순간을 혼자 넘기지 않도록</small></p></li>
+            <li><span>03</span><p><b>인앱 1:1 채팅 · SOS 답변</b><small>Cathy &amp; Ray 공동 답장함에서 개별 피드백</small></p></li>
           </ol>
         </div>
 
