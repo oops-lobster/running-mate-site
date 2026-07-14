@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#110f0c" />
+    <meta name="description" content="하루 계획부터 공부 세션, 회고까지. 서울대 선배 Cathy & Ray와 함께 달리는 수험생 학습 페이스메이커." />
+    <meta property="og:title" content="러닝메이트 — 내 하루를 같이 뛰는 공부 메이트" />
+    <meta property="og:description" content="하루 전체를 두 줄로 보고, 공부가 끝난 자리에서 다음 공부를 준비합니다." />
+    <meta property="og:image" content="./assets/icon-192.png" />
+    <title>러닝메이트 — 내 하루를 같이 뛰는 공부 메이트</title>
+    <link rel="icon" href="./assets/icon-192.png" />
+    <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 이동</a>
+
+    <header class="header" data-header>
+      <a class="brand" href="#home" aria-label="러닝메이트 처음으로">
+        <img src="./assets/icon-192.png" width="44" height="44" alt="" />
+        <span>러닝메이트</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <a href="#how">실제 앱</a>
+        <a href="#premium">프리미엄</a>
+        <a class="nav-cta" href="#premium">무료로 시작</a>
+      </nav>
+      <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" data-menu-button><i></i><i></i></button>
+    </header>
+
+    <main id="main">
+      <section class="scene hero" id="home" data-theme="light">
+        <div class="paper-grid" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> ALL-DAY STUDY PACEMAKER</p>
+          <h1>내 하루를<br /><em>같이</em> 뛰는<br />공부 메이트.</h1>
+          <p class="hero-lead">계획만 세우고 사라지는 앱이 아니라,<br />아침부터 밤까지 같은 트랙에 남아 있는 메이트.</p>
+          <div class="actions">
+            <a class="button button-dark" href="#how">실제 앱으로 보기 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
+            <a class="button button-ghost" href="#premium">무료와 프리미엄</a>
+          </div>
+          <p class="micro-proof"><span>핵심 기록 무료</span><i></i><span>AI 기본 제공</span><i></i><span>로그인 후 안전하게 동기화</span></p>
+        </div>
+
+        <div class="hero-app reveal">
+          <div class="actual-label"><span>ACTUAL APP</span><b>develop build · home</b></div>
+          <div class="halo" aria-hidden="true"></div>
+          <figure class="phone phone-hero">
+            <img src="./assets/actual-home.jpg" width="390" height="844" alt="하루 전체를 나와 러닝메이트의 두 줄 타임라인으로 보여주는 실제 러닝메이트 홈 화면" />
+          </figure>
+          <div class="hero-note note-top"><span>나 →</span><b>오늘 내가 달린 기록</b></div>
+          <div class="hero-note note-bottom"><span>← 러닝메이트</span><b>다음 행동을 놓치지 않게</b></div>
+        </div>
+
+        <a class="scroll-cue" href="#how"><span>SEE THE REAL FLOW</span><i></i></a>
+      </section>
+
+      <section class="scene product-scene" id="how" data-theme="dark">
+        <div class="product-copy reveal">
+          <p class="eyebrow gold"><span></span> PLAN · RUN · REVIEW</p>
+          <h2>실제로,<br />이렇게<br /><em>함께해요.</em></h2>
+          <p>예쁜 목업 대신 지금 구현된 화면을 그대로 담았습니다. 하루를 보고, 한 세션에 몰입하고, 끝난 자리에서 회고합니다.</p>
+          <div class="implementation-facts" aria-label="실제 앱 구현 정보">
+            <span>PWA · iOS</span><span>SUPABASE SYNC</span><span>PRIVATE PHOTO</span><span>GEMINI REVIEW</span>
+          </div>
+        </div>
+
+        <div class="screen-deck reveal" aria-label="러닝메이트 실제 앱 화면 세 가지">
+          <article class="screen-item home-screen">
+            <div class="screen-caption"><span>01 · 하루 보기</span><b>내 계획과 메이트의 도움을<br />한 타임라인에서</b></div>
+            <figure class="phone"><img src="./assets/actual-home.jpg" width="390" height="844" alt="러닝메이트 실제 홈 타임라인 화면" /></figure>
+          </article>
+          <article class="screen-item session-screen">
+            <div class="screen-caption"><span>02 · 세션 실행</span><b>지금 할 일과 인증만<br />선명하게</b></div>
+            <figure class="phone"><img src="./assets/actual-session.jpg" width="390" height="844" alt="할 일, 인증 사진, 한 줄 회고가 있는 실제 공부 세션 화면" /></figure>
+          </article>
+          <article class="screen-item review-screen">
+            <div class="screen-caption"><span>03 · 끝난 직후</span><b>점수·사진·느낌이<br />다음 공부의 재료로</b></div>
+            <figure class="phone"><img src="./assets/actual-review.jpg" width="390" height="844" alt="실모 점수와 만족도, 개선점, 피드백 사진을 남기는 실제 회고 화면" /></figure>
+          </article>
+        </div>
+        <p class="swipe-hint" aria-hidden="true">화면을 옆으로 넘겨보세요 <span>→</span></p>
+        <div class="flow-line reveal" aria-hidden="true"><span>하루 계획</span><i></i><span>집중 세션</span><i></i><span>즉시 회고</span><i></i><b>다음 시행</b></div>
+      </section>
+
+      <section class="scene premium-scene" id="premium" data-theme="cream">
+        <div class="premium-intro reveal">
+          <p class="eyebrow bronze"><span></span> FREE FIRST. CLOSER WHEN READY.</p>
+          <h2>먼저<br />충분히<br /><em>써보고.</em></h2>
+          <p>하루 기록과 AI 기본 제공량은 무료.<br />더 촘촘한 관리가 필요할 때 프리미엄으로.</p>
+          <div class="mentor-signature">
+            <div class="monogram"><b>C</b><i>&amp;</i><b>R</b></div>
+            <span><small>SEOUL NATIONAL UNIVERSITY MENTORS</small><b>Cathy &amp; Ray의 밀착 마크</b><p>서울대 의대·수의대 정시 합격 선배</p></span>
+          </div>
+        </div>
+
+        <div class="price-wrap reveal">
+          <div class="billing" role="group" aria-label="결제 주기">
+            <button class="active" type="button" data-billing="monthly">월 결제</button>
+            <button type="button" data-billing="annual">연 결제 <span>2개월 무료</span></button>
+          </div>
+          <article class="price-card">
+            <div class="price-head"><span><small>PREMIUM</small><b>수험생 밀착 관리</b></span><em>CATHY &amp; RAY</em></div>
+            <div class="price"><strong data-price>₩59,000</strong><span data-period>매월</span></div>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg><span><b>매일 모의고사 1:1 리뷰</b><small>Cathy &amp; Ray가 직접 확인</small></span></li>
+              <li><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg><span><b>확장 AI 분석과 주간 약점 리포트</b><small>더 많이 분석하고 다음 주까지 연결</small></span></li>
+              <li><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg><span><b>SOS 답변과 다음 주 플랜</b><small>막힌 순간을 혼자 넘기지 않도록</small></span></li>
+            </ul>
+            <a class="button button-cream" href="https://github.com/cathyahn4u/running-mate" target="_blank" rel="noreferrer">베타 출시 소식 보기 <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
+            <p class="beta-note">현재 베타 준비 중이며 정식 출시 시 공개됩니다.</p>
+          </article>
+          <div class="free-note"><span>AI USAGE</span><b>AI도 먼저 무료로.</b><p>기본 제공량을 써본 뒤, 더 많이 필요할 때 확장하세요.</p><i><em></em></i></div>
+        </div>
+
+        <footer><a href="#home"><img src="./assets/icon-192.png" width="34" height="34" alt="" /><b>러닝메이트</b></a><p>© 2026 Cathy &amp; Ray. 합격을 보장하지 않으며 학습 실행을 돕는 서비스입니다.</p></footer>
+      </section>
+    </main>
+  </body>
+</html>
